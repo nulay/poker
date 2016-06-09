@@ -1,4 +1,6 @@
-package imix.game.cards.poker;
+package by.imix.game;
+
+import by.imix.game.cards.Card;
 
 import java.util.List;
 

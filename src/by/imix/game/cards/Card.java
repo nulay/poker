@@ -1,4 +1,4 @@
-package imix.game.cards.poker;
+package by.imix.game.cards;
 
 /**
  * Created by Mikhail_Kachanouski on 6/7/2016.
