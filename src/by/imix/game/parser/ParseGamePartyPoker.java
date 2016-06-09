@@ -1,5 +1,7 @@
 package by.imix.game.parser;
 
+import by.imix.game.Game;
+
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,28 +11,21 @@ import java.util.Map;
 /**
  * Created by Mikhail_Kachanouski on 6/8/2016.
  */
-public class ParseGamePartyPoker {
+public class ParseGamePartyPoker extends ParseGame{
 
-    private Game game;
 
-    //anchors
-    private Map<String,BufferedImage> anchors;
     //games
     private List<Game> games=new ArrayList<Game>();
 
-    public ParseGamePartyPoker() {
-        this.anchors = new HashMap<String, BufferedImage>();
-    }
 
-    public ParseGamePartyPoker(Map<String, BufferedImage> anchors) {
-        this.anchors = anchors;
+    public ParseGamePartyPoker(Map<String, Anchor> anchors) {
+        super(anchors);
     }
 
 
     /**
      * full parse data for game
      * @param partScreen - part screen for current game
-     * @param game current game
      * @return do
      */
     public boolean fullParse(BufferedImage partScreen){
@@ -39,20 +34,4 @@ public class ParseGamePartyPoker {
     }
 
 
-
-
-
-
-
-
-
-
-
-    public Map<String, BufferedImage> getAnchors() {
-        return anchors;
-    }
-
-    public void setAnchors(Map<String, BufferedImage> anchors) {
-        this.anchors = anchors;
-    }
 }
