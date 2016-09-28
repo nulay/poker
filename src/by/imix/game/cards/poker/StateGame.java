@@ -2,6 +2,8 @@ package by.imix.game.cards.poker;
 
 /**
  * Created by Mikhail_Kachanouski on 6/7/2016.
+ *
+ * Class for set state of game.
  */
 public enum StateGame {
     WAIT, // ожидание новой игры.
